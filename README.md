@@ -32,5 +32,4 @@ Identificador do Curso, obrigatório
 1 curso é lecionado somente por 1 professor, portanto será usada a cardinalidade 1:1.
  
  ### Exemplos Modelagem conceitual
- ![Entidades, atributos, relacionamentos](exercicio_modelagem/C
- onceitual_2.png)
+ ![Entidades, atributos, relacionamentos](exercicio_modelagem/Conceitual_2.png)
