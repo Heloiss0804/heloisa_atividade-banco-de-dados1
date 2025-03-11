@@ -33,3 +33,6 @@ Identificador do Curso, obrigatório
  
  ### Exemplos Modelagem conceitual
  ![Entidades, atributos, relacionamentos](exercicio_modelagem/Conceitual_2.png)
+
+ ### Exemplos Modelagem Lógico
+ ![Entidades, atributos, relacionamentos](exercicio)
