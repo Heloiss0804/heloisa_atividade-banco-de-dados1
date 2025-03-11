@@ -1,5 +1,0 @@
-### Criando a tabela
-
-```sql
-
-```
