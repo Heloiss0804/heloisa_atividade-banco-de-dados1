@@ -35,4 +35,4 @@ Identificador do Curso, obrigatório
  ![Entidades, atributos, relacionamentos](exercicio_modelagem/Conceitual_2.png)
 
  ### Exemplos Modelagem Lógico
- ![Entidades, atributos, relacionamentos](exercicio)
+ ![Entidades, atributos, relacionamentos](exercicio_modelo_logico/modelo-%20logico%202.png)
