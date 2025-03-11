@@ -1,4 +1,5 @@
 ### Criando a tabela
 
-```
+```sql
+
 ```
