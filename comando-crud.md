@@ -128,3 +128,11 @@ JOIN cursos c ON p.curso_id = c.id
 ORDER BY p.nome ASC;
 
 ```
+
+### Exercicio 8
+
+```sql
+
+
+```
+
