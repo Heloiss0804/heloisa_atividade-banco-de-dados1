@@ -155,4 +155,10 @@ ORDER BY quantidade_alunos DESC;
 
 ```
 
+### Exercicio 10
 
+```sql
+
+
+
+```
