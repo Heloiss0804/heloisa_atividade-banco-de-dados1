@@ -70,12 +70,14 @@ VALUES  ('Ana Souza', '2000-05-12', 8.5, 7.0, 2),
 
 ### Etapa 4 Final
 
+### Exercicio 1
 ```sql
 SELECT nome, data_de_nascimento 
 FROM alunos 
 WHERE data_de_nascimento < '2009-01-01';
 ```
 
+### Exercicio 2
 ```sql
 SELECT nome, 
        (primeira_nota + segunda_nota) AS soma_notas,
@@ -83,7 +85,7 @@ SELECT nome,
 FROM alunos;
 
 ```
-
+### Exercicio 3
 ```sql
 SELECT 
     nome AS curso, 
@@ -93,14 +95,25 @@ FROM cursos
 ORDER BY nome ASC;
 
 ```
+### Exercicio 4
 ```sql
 SELECT nome 
 FROM professores 
 WHERE area_de_atuacao = 'Desenvolvimento';
 
 ```
-
+### Exercicio 5
 ```sql
 SELECT area_de_atuacao, COUNT(*) AS quantidade_professores FROM professores WHERE area_de_atuacao IN ('Design', 'Infra', 'Desenvolvimento') GROUP BY area_de_atuacao;
+
+```
+### Exercicio 6
+```sql
+SELECT 
+    a.nome AS aluno, 
+    c.nome AS curso, 
+    c.carga_horaria 
+FROM alunos a
+JOIN cursos c ON a.curso_id = c.id;
 
 ```
