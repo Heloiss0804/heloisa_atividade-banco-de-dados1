@@ -83,3 +83,12 @@ FROM alunos;
 
 ```
 
+```sql
+SELECT 
+    nome AS curso, 
+    carga_horaria, 
+    (carga_horaria * 0.25) AS limite_faltas
+FROM cursos
+ORDER BY nome ASC;
+
+```
