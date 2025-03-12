@@ -158,7 +158,50 @@ ORDER BY quantidade_alunos DESC;
 ### Exercicio 10
 
 ```sql
+SELECT 
+    a.nome AS aluno,
+    a.primeira_nota,
+    a.segunda_nota,
+    (a.primeira_nota + a.segunda_nota) / 2 AS media,
+    c.nome AS curso
+FROM alunos a
+JOIN cursos c ON a.curso_id = c.id
+WHERE c.nome IN ('Front-End', 'Back-End')
+ORDER BY a.nome ASC;
 
+
+
+```
+
+### Exercicio 11
+```sql
+ SELECT 
+UPDATE cursos
+SET nome = 'Adobe XD', carga_horaria = 15
+WHERE nome = 'Figma';
+
+```
+
+### Exercicio 12
+
+```sql
+-- aluno do curso de Redes de Computadores
+DELETE FROM alunos
+WHERE curso_id = (SELECT id FROM cursos WHERE nome = 'Rede de computadores' LIMIT 1)
+LIMIT 1;
+
+-- aluno do curso de UX/UI
+DELETE FROM alunos
+WHERE curso_id = (SELECT id FROM cursos WHERE nome = 'UX,UI' LIMIT 1)
+LIMIT 1;
+
+
+```
+
+
+### Exercicio 13
+
+```sql
 
 
 ```
