@@ -117,3 +117,14 @@ FROM alunos a
 JOIN cursos c ON a.curso_id = c.id;
 
 ```
+### Exercicio 7
+
+```sql
+SELECT 
+    p.nome AS professor, 
+    c.nome AS curso 
+FROM professores p
+JOIN cursos c ON p.curso_id = c.id
+ORDER BY p.nome ASC;
+
+```
