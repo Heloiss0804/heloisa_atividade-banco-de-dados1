@@ -99,3 +99,8 @@ FROM professores
 WHERE area_de_atuacao = 'Desenvolvimento';
 
 ```
+
+```sql
+SELECT area_de_atuacao, COUNT(*) AS quantidade_professores FROM professores WHERE area_de_atuacao IN ('Design', 'Infra', 'Desenvolvimento') GROUP BY area_de_atuacao;
+
+```
