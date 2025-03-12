@@ -93,3 +93,9 @@ FROM cursos
 ORDER BY nome ASC;
 
 ```
+```sql
+SELECT nome 
+FROM professores 
+WHERE area_de_atuacao = 'Desenvolvimento';
+
+```
