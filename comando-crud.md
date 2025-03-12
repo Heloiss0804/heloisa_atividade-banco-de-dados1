@@ -67,3 +67,19 @@ VALUES  ('Ana Souza', '2000-05-12', 8.5, 7.0, 2),
 ('Juliana Freitas', '1998-04-20', 7.0, 7.0, 5);
 
 ```
+
+### Etapa 4 Final
+
+```sql
+SELECT nome, data_de_nascimento FROM alunos
+WHERE data_de_nascimento < 2009;
+```
+
+```sql
+SELECT curso_id , SUM(primeira_nota + segunda_nota) 
+AS Total FROM alunos
+JOIN cursos ON 
+GROUP BY curso_id;
+
+```
+
