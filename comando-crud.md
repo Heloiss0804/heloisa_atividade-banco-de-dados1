@@ -132,7 +132,27 @@ ORDER BY p.nome ASC;
 ### Exercicio 8
 
 ```sql
+SELECT 
+    a.nome AS aluno, 
+    c.nome AS curso, 
+    p.nome AS professor
+FROM alunos a
+JOIN cursos c ON a.curso_id = c.id
+JOIN professores p ON c.professor_id = p.id;
 
 
 ```
+
+### Exercicio 9
+
+```sql
+SELECT 
+  c.nome AS curso, COUNT(a.id) AS quantidade_alunos 
+FROM cursos c LEFT JOIN alunos a 
+ON c.id = a.curso_id GROUP BY c.nome 
+ORDER BY quantidade_alunos DESC;
+
+
+```
+
 
