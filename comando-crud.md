@@ -222,3 +222,38 @@ SELECT
 FROM alunos;
 
 ```
+
+### Desafio 2
+
+```sql
+SELECT 
+    nome AS aluno,
+    (primeira_nota + segunda_nota) / 2 AS media
+FROM alunos
+HAVING media >= 7;
+
+```
+
+### Desafio 3
+
+```sql
+SELECT 
+    nome AS aluno,
+    (primeira_nota + segunda_nota) / 2 AS media
+FROM alunos
+WHERE (primeira_nota + segunda_nota) / 2 < 7;
+
+
+```
+
+### Desafio 4
+
+```sql
+
+SELECT 
+    COUNT(*) AS quantidade_alunos
+FROM alunos
+WHERE (primeira_nota + segunda_nota) / 2 >= 7;
+
+
+```
