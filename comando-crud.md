@@ -202,6 +202,23 @@ LIMIT 1;
 ### Exercicio 13
 
 ```sql
+SELECT 
+    a.nome AS aluno, 
+    c.nome AS curso
+FROM alunos a
+JOIN cursos c ON a.curso_id = c.id
+ORDER BY a.nome ASC;
 
+
+```
+
+### Desafio 1
+
+```sql
+SELECT 
+    nome AS aluno,
+    data_de_nascimento,
+    TIMESTAMPDIFF(YEAR, data_de_nascimento, CURDATE()) AS idade
+FROM alunos;
 
 ```
