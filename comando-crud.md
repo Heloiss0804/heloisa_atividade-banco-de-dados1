@@ -76,10 +76,10 @@ WHERE data_de_nascimento < 2009;
 ```
 
 ```sql
-SELECT curso_id , SUM(primeira_nota + segunda_nota) 
-AS Total FROM alunos
-JOIN cursos ON 
-GROUP BY curso_id;
+SELECT nome, 
+       (primeira_nota + segunda_nota) AS soma_notas,
+       ROUND((primeira_nota + segunda_nota) / 2, 2) AS media_notas
+FROM alunos;
 
 ```
 
