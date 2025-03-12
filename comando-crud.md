@@ -71,8 +71,9 @@ VALUES  ('Ana Souza', '2000-05-12', 8.5, 7.0, 2),
 ### Etapa 4 Final
 
 ```sql
-SELECT nome, data_de_nascimento FROM alunos
-WHERE data_de_nascimento < 2009;
+SELECT nome, data_de_nascimento 
+FROM alunos 
+WHERE data_de_nascimento < '2009-01-01';
 ```
 
 ```sql
